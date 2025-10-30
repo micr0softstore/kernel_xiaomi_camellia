@@ -1271,7 +1271,7 @@ static int try_to_force_load(struct module *mod, const char *reason)
 #endif
 }
 
-#if 0
+#ifdef CONFIG_MODVERSIONS
 
 static u32 resolve_rel_crc(const s32 *crc)
 {
